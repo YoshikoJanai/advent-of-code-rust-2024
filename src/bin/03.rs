@@ -26,7 +26,8 @@ fn parse_re_mul(input: &str) -> Vec<Instruction> {
 
 fn parse_re_mul_but_diseased(input: &str) -> Vec<Instruction> {
     let mut out = vec![];
-
+    let re = Regex::new(MUL_REGEX_WITH_CRABS).expect("{MUL_REGEX_WITH_CRABS} is invalid");
+    
     out
 }
 
